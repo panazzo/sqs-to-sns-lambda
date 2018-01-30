@@ -17,3 +17,13 @@ TOPIC_ARN # SNS topic to publish messages
 In order to enable lambda to access the spicified resources, don't forget to create a IAM role and attach to it. Attach the `Lambda`, `SQS` and `SNS` policies
 
 It is recomended to create a `Cloud Watch Events` scheduled trigger, that fires every minute: `rate(1 minute)`   
+
+## Deploy
+
+It uses [node-lambda](https://github.com/motdotla/node-lambda) under the hood to locally run and also deploy your node.js Amazon Lambda application.
+
+```
+npm run setup # setup node-lambda files
+npm run package # just generate the zip that would be uploaded to AWS
+npm run deploy # deploy to AWS
+```

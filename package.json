@@ -1,0 +1,25 @@
+{
+    "name": "sqs-to-sns-lambda",
+    "version": "0.0.1",
+    "description": "Simple Node.js app designed to run on Amazon Lambda that polls Amazon SQS and publish its messages to Amazon SNS.",
+    "main": "index.js",
+    "repository": {
+      "type": "git",
+      "url": "git@github.com:panazzo/sqs-to-sns-lambda.git"
+    },
+    "author": "panazzo",
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/panazzo/sqs-to-sns-lambda/issues"
+    },
+    "homepage": "https://github.com/panazzo/sqs-to-sns-lambda",
+    "scripts": {
+      "setup": "./node_modules/.bin/sqs-to-sns-lambda setup",
+      "test": "./node_modules/.bin/sqs-to-sns-lambda run",
+      "package": "./node_modules/.bin/sqs-to-sns-lambda package",
+      "deploy": "./node_modules/.bin/sqs-to-sns-lambda deploy"
+    },
+    "devDependencies": {
+      "node-lambda": "^0.9.0"
+    }
+  }
